@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 Body {
- width: auto;
+ width: 100vw;
  background-color: white;
  background-image: url(imagens\ maquinas/fundo.jpg);
  background-repeat: no-repeat;
@@ -18,7 +18,7 @@ Body {
 }
 
 header{
-  width: 100%;
+  width: 100vw;
   height: 70%;
   background-color:#F2D786  ;
   display: flex;
