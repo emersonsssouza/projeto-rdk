@@ -1,197 +1,183 @@
 @charset "utf-8";
 
-Body {
- width: 100vw;
- background-color: white;
- background-image: url(imagens\ maquinas/fundo.jpg);
- background-repeat: no-repeat;
- background-position: center;
- background-attachment: fixed;
- background-size: cover;
- 
+* { 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
 }
 
-* { 
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+Body, html {
+width: 100vw;
+background-color: white;
+background-image: url(imagens\ maquinas/fundo.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+overflow-x: hidden;
 }
 
 header{
-  width: 100vw;
-  height: 70%;
-  background-color:#F2D786  ;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: auto;
+width: 100vw;
+background-color:#F2D786  ;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin: auto;
 }
 
-header > .d2 {
-  background-color: black;
-  width: 70%;
-  height: 40px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  text-transform: uppercase;
-  border-radius: 6px;
-
-}
-header > .redessociais {
-  width: 20%;
-  margin: 10px 10px 10px 20px;
+header > nav {
+width: auto;
+margin: 10px 10px 10px 20px;
 }
 
-header > .d2 > .especial {
-  text-transform: none;
-  font-size: 14px;
+header > nav > a > img {
+width: 45px;
+background-color: rgba(0, 0, 0, 0.448);
+border: 0px solid black;
+border-radius: 50%;
 }
 
-header > .d2 > a {
-  margin-left: 40px;
-  text-decoration: none;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+header > nav > a > img:hover {
+transition: 1s;
+background-color: white;
 }
 
-article.menu2 {
-  background-color: white;
-  margin-top: -10px;
+header > nav.menu-lateral {
+width: auto;
+padding: 10px 20px;
+background-color: black;
+border-radius: 10px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+font-size: 14px;
 }
 
-article div.vanzolini {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #036CAD;
-  padding: 0px;
-
+header > nav.menu-lateral > a {
+color: white;
+font-size: 14px;
+font-weight: 700;
+text-decoration: none;
+padding: 2px 10px;
 }
 
-div.fundacao {
-   display: flex;
-   margin: 10px 200px 10px 100px;
-}
-
-div.fundacao p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  text-align: justify;
-  color: white;
-  font-weight: 100;
-}
-
-main{
-  background-color: white;
-  margin: 0px auto 0px auto;
-  padding: 10px 10px 10px 10px;
-  
-}
-
- div.logo1 {
-  display: flex;
-  margin: 10px 100px 20px 100px;
-  justify-content: space-around;
-  padding: 20px;
-  
-}
-
-div.mola {
-  border: 2px solid black;
-  border-radius: 7px;
-}
-
-div#texto0 {
-  padding: 5px;
-  margin-top: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  color: #2478B8;
-}
-
-div.titulo1 {
-  text-align: center;
-  color: #2478B8;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  margin-bottom: 15px;
+header > nav.menu-lateral > a:hover{
+color: blue;
 }
 
 article {
-  margin-top: 400px;
+  background-color: white;
 }
 
-main .texto1 {
-  align-items: center;
-  color: #E9B644;
-  text-align: center;
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5px 5px 5px 5px;
- 
+div.conteudo-itens {
+display: flex;
+justify-content: space-evenly;
+padding: 20px 10px;
+margin-left: 60px;
+margin-right: 60px;
 }
 
-.t2 {
- display: flex;
- align-items: center;
- justify-content: space-around;
- text-align: center; 
- padding: 50px 20px 20px 20px;
- margin: 50px 10px 10px 10px;
+div.conteudo-itens > img.conteudo-itens-redondo {
+width: 170px;
+height: 170px;
+border: 2px solid black;
+border-radius: 50%;
 }
 
-
-
-.link3  {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  margin-bottom: 5px;
+div#conteudo-itens-texto {
+padding: 5px;
+margin-top: 10px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+color: #2478B8;
+}
+div.conteudo-itens-titulo {
+text-align: center;
+color: #2478B8;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+margin-top: 20px;
+margin-bottom: 15px;
+}
+aside {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+background-color: #036CAD;
+margin-bottom: 600px;
 }
 
-.link3 a {
-  text-decoration: none;
-  color: black;
+div.conteudo-itens-historia > p {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+text-align: justify;
+color: white;
+font-weight: 100;
+}
+
+main{
+background-color: white;
+padding: 10px;
+}
+
+section{
+background-color: white;
+color: #E9B644;
+text-align: center;
+font-size: 30px;
+}
+
+main > div.conteudo-maquinas {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+}
+
+main > div.imagem-maquina {
+display: inline-block;
+position: relative;
+}
+
+p.texto {
+padding: 20px 0px;
+font-size: 20px;
+text-align: center;
 }
 
 footer {
-  background-color: #212020 ;
-  color: white;
-  margin: auto;
- 
+background-color: #212020 ;
+color: white;
+margin: auto;
 }
 
 footer h1 {
-  border-bottom: 2px double white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: lighter;
-  line-height: 16px;
-  margin-bottom: 16px;
-  margin-top: 10px;
+border-bottom: 2px double white;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+font-weight: lighter;
+line-height: 16px;
+margin-bottom: 16px;
+margin-top: 10px;
 }
 
 footer p {
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 14px;
-   font-weight: lighter;
-   line-height: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+font-weight: lighter;
+line-height: 20px;
 }
 
 footer a {
-  color: white;
-  text-decoration: none;
+color: white;
+text-decoration: none;
 }
 
-footer .lista {
-  display: flex;
-  justify-content: space-evenly;
-  justify-items: center;
+footer > div.lista {
+display: flex;
+justify-content: space-evenly;
+justify-items: center;
 }
-
-
-
