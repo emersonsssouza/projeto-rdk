@@ -1,6 +1,15 @@
 @charset "utf-8";
 
 @media screen and (min-width: 320px) and (max-width: 550px ) {
+
+    * { 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        
     header{
         width: 100vw;
         background-color:#F2D786  ;
@@ -63,20 +72,18 @@
               
               div.conteudo-itens {
               display: block;
-              justify-content: space-evenly;
               padding: 20px 10px;
-              margin-left: 60px;
-              margin-right: 60px;
+             
               }
               
               div.conteudo-itens > img.conteudo-itens-redondo {
               display: block;
-              margin: 0 auto;
+              margin: 10px;
               width: 170px;
               height: 170px;
               border: 2px solid black;
               border-radius: 50%;
-              margin: 15px;
+             
               }
               
               div#conteudo-itens-texto {
@@ -105,6 +112,8 @@
                 justify-content: space-around;
                 background-color: #036CAD;
                 margin-bottom: 600px;
+
+               
                 }
                 
                 div.conteudo-itens-historia > p {
@@ -137,9 +146,9 @@
                     display: block;
                     flex-direction: row;
                     padding: 10px 10px;
-                    margin: 20px 10px; 
+                    margin: 20px; 
                     align-items: center;
-                    justify-content: space-around;
+                    
                     }
                     
                     main > div.imagem-maquina {
@@ -158,6 +167,7 @@
                         color: white;
                         margin: auto;
                         margin-top: -10px;
+                        padding: 20px;
                         }
                         
                         footer h1 {
