@@ -171,6 +171,11 @@
                     margin: auto;
                     width: auto;
                     }
+
+                     img.imagem-maquinas-img {
+                        margin: auto;
+                        display: block;
+                    }
                     
                     p.texto {
                     padding: 20px 0px;
