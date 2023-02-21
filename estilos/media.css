@@ -158,9 +158,9 @@
                     
                     main > div.conteudo-maquinas {
                     display: block;
-                    flex-direction: row;
-                    padding: 10px 10px;
-                    margin: 10px; 
+                    flex-direction: column;
+                    padding: 10px;
+                    margin: auto; 
                     align-items: center;
                     
                     }
