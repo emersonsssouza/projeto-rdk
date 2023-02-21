@@ -33,6 +33,7 @@
             background-color: rgba(0, 0, 0, 0.448);
             border: 0px solid black;
             border-radius: 50%;
+            
             }
             
             header > nav > a > img:hover {
@@ -67,11 +68,14 @@
             /*Inicio da parte das imagens com borda redonda*/
 
             article {
+                display: block;
                 background-color: white;
+                margin: auto;
               }
               
               div.conteudo-itens {
               display: block;
+              margin: auto;
               padding: 20px 10px;
              
               }
