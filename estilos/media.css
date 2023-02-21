@@ -159,21 +159,20 @@
                     main > div.conteudo-maquinas {
                     display: block;
                     flex-direction: column;
-                    padding: 10px;
                     margin: auto; 
                     align-items: center;
                     
                     }
                     
                     main > div.imagem-maquinas {
-                    display: inline-block;
-                    position: relative;
+                    display: block;         
                     margin: auto;
-                    width: auto;
+                    width: none;
                     }
 
                      img.imagem-maquinas-img {
                         margin: auto;
+                        width: none;
                         display: block;
                     }
                     
