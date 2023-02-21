@@ -139,7 +139,7 @@ align-items: center;
 justify-content: space-around;
 }
 
-main > div.imagem-maquina {
+main > div.imagem-maquinas {
 display: inline-block;
 position: relative;
 }
