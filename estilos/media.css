@@ -39,27 +39,50 @@
     background-color: white;
     }
             
-    header > nav.menu-lateral {
-    width: auto;
-    padding: 10px 20px;
-    background-color: black;
-    border-radius: 10px;
-    display: block;
-    flex-direction: column;    
-    align-items: center;
-    font-size: 14px;
+    
+
+
+
+
+
+
+
+    menu {
+        background-color: transparent;
+        display: none;
     }
-            
-    header > nav.menu-lateral > a {
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    text-decoration: none;
-    padding: 2px 10px;
+
+    menu > ul {
+        list-style-type: none;
+        columns: 2;
     }
-            
-    header > nav.menu-lateral > a:hover {
-    color: blue;
+
+    menu > ul > li > a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        background-color: transparent;
+        color: blue;
+        text-align: center;
+        border-top: 1px solid black;
+    }
+
+    menu > ul > li > a:hover {
+        background-color: none;
+    }
+
+    menu > i#icone {
+        width: 100px;
+        margin: auto;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    menu > i#icone:hover {
+        background-color: none;
+        color: black
     }
 
     /*Fim da parte superior, o header */
@@ -120,7 +143,7 @@
     align-items: center;
     justify-content: space-around;
     background-color: #036CAD;
-    margin-bottom: 600px;                       
+    margin-bottom: 0px;                       
     }
             
     div.conteudo-itens-historia > p {
@@ -149,7 +172,7 @@
     font-size: 30px;
     }
                     
-    main > div.conteudo-maquinas {
+    main > div.conteudo-maquinas, main > div.conteudo-maquinas-2 {
     display: block;
     flex-direction: column;
     margin: auto; 

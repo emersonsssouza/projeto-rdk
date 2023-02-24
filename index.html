@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="estilos/style.css">
             <link rel="stylesheet" href="estilos/media.css" media="(orientation: portrait)">
               <title>RDK Molas</title>
                 <link rel="shortcut icon" href="favicon-ico/favicon.png" type="image/x-icon">
+                  <script src="javascript/java-menu.js"></script>
+                    <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<body>
+<body onresize="mudouTamanho()">
   <header>
     <nav>
       <a href="https://www.instagram.com/rdkmolas/"><img src="favicon-ico/instagram.png"/></a>
@@ -18,16 +20,44 @@
             <a href="https://rdkmolas.com.br/sac/"><img src="favicon-ico/email.png"/></a>
     </nav>
 
-    <nav class="menu-lateral">
-      <a href="https://rdkmolas.com.br/">Home</a>
-        <a href="https://rdkmolas.com.br/sobre-a-empresa/">Empresa </a>
-          <a href="https://rdkmolas.com.br/maquinas/"> Processos </a>
+    
+      <i id="icone" class="material-icons" onclick="clicou()"><img src="favicon-ico/menu.png" alt=""></i>
+      <menu id="item">
+        <ul>
+          <li>
+            <a href="https://rdkmolas.com.br/">Home</a>
+          </li>
+
+          <li>
+            <a href="https://rdkmolas.com.br/sobre-a-empresa/">Empresa </a>
+          </li>
+
+          <li>
+            <a href="https://rdkmolas.com.br/maquinas/"> Processos </a>
+          </li>
+
+          <li>
             <a href="https://rdkmolas.com.br/artefatos-em-arame-2/"> Produtos</a>
-              <a href="https://rdkmolas.com.br/projetos-e-ferramentaria/">Ferramentaria</a>
-                <a href="https://rdkmolas.com.br/cotacao/">Cotação</a>
-                  <a href="https://rdkmolas.com.br/cotacao/">SAC</a>
-                    <a class="https://rdkmolas.com.br/wp-content/uploads/2022/03/CERTIFICADO-RDK-ISO-9001-Val.-2024-COMPLETO.pdf" href="#">Certificação</a>
-      </nav>
+          </li>
+        
+          <li>
+            <a href="https://rdkmolas.com.br/projetos-e-ferramentaria/">Ferramentaria</a>
+          </li>
+
+          <li>
+            <a href="https://rdkmolas.com.br/cotacao/">Cotação</a>
+          </li>
+        
+          <li>
+            <a href="https://rdkmolas.com.br/cotacao/">SAC</a>
+          </li>
+        
+          <li>
+            <a class="https://rdkmolas.com.br/wp-content/uploads/2022/03/CERTIFICADO-RDK-ISO-9001-Val.-2024-COMPLETO.pdf" href="#">Certificação</a>
+          </li>
+        </ul>
+      </menu>
+
   </header>
 
   <article>
@@ -54,10 +84,13 @@
 
       <div class="conteudo-itens-vanzolini">
         <img src="vanzolini/vanzolini.png" alt="">
-      </div>
-            
+      </div>          
   </aside>
   </article>
+
+  <div class="foto">
+        
+  </div>
 
   <main>  
     <section>
@@ -67,30 +100,44 @@
     </section>
                   
     <div class="conteudo-maquinas">
-
       <div class="imagem-maquinas">
-        <img class="imagem-maquinas-img" src="maquina redminesionado/maquinaultimo.jpg" alt="Nossos Produtos"></img>
-          <p class="texto">Nossos produtos</p>
+        <img class="imagem-maquinas-img" src="maquinas/maq-01.jpg" alt="Nossos Produtos"></img>
+          <p class="texto">DK-50</p>
       </div>
 
       <div class="imagem-maquinas">
-        <img  class="imagem-maquinas-img" src="maquina redminesionado/maquina2.jpg" alt="Nossas Maquinas"></img>
-          <p class="texto">Nossas máquinas</p>
+        <img  class="imagem-maquinas-img" src="maquinas/maq-02.jpg" alt="Nossas Maquinas"></img>
+          <p class="texto">RD-18</p>
       </div>
 
       <div class="imagem-maquinas">
-        <img class="imagem-maquinas-img" src="maquina redminesionado/maquina3.jpg" alt="Nossas Ferramentas"></img>
-          <p class="texto">Nossos projetos & <br> Ferramentaria</p>
+        <img class="imagem-maquinas-img" src="maquinas/maq-03.jpg" alt="Nossas Ferramentas"></img>
+          <p class="texto">DK-80</p>
       </div>
-
     </div>
 
+    <div class="conteudo-maquinas-2">
+
+      <div class="imagem-maquinas">
+        <img class="imagem-maquinas-img" src="maquinas/maq-04.jpg" alt="Nossos Produtos"></img>
+          <p class="texto">RD-18</p>
+      </div>
+
+      <div class="imagem-maquinas">
+        <img  class="imagem-maquinas-img" src="maquinas/maq-05.jpg" alt="Nossas Maquinas"></img>
+          <p class="texto">DBD-30</p>
+      </div>
+
+      <div class="imagem-maquinas">
+        <img class="imagem-maquinas-img" src="maquinas/maq-06.jpg" alt="Nossas Ferramentas"></img>
+          <p class="texto">DBT</p>
+      </div>
+    </div>
   </article>
   </main>
 
   <footer>
     <div class="lista">
-
       <div>
         <h1>Páginas</h1>
           <a href=""><p>Home</p></a>
@@ -99,7 +146,7 @@
                 <a href="https://rdkmolas.com.br/projetos-e-ferramentaria/"><p>Projetos e Ferramentaria</p></a>
                   <a href="https://rdkmolas.com.br/certificado/"><p>Certificação</p></a>
                     <a href="https://rdkmolas.com.br/sac/"><p>SAC</p></a>
-      </div>
+    </div>
 
       <div>
       <h1>RDK Molas</h1>
