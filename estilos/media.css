@@ -39,14 +39,6 @@
     background-color: white;
     }
             
-    
-
-
-
-
-
-
-
     menu {
         background-color: transparent;
         display: none;
@@ -71,18 +63,31 @@
         background-color: none;
     }
 
-    menu > i#icone {
-        width: 100px;
-        margin: auto;
+    div.icon {
         background-color: transparent;
+        width: 100%;
+    }
+
+    menu > div.icon > i#icone {
+        background-color: black;
+        color: white;
+        width: auto;
         display: flex;
         align-items: center;
-        justify-content: left;
+        justify-content: space-around;
+    }
+
+    i#icone {
+        position: relative;
+        background-color: none;
+        display: flex;
+        align-items: left;
+       
     }
 
     menu > i#icone:hover {
         background-color: none;
-        color: black
+        color: white;
     }
 
     /*Fim da parte superior, o header */

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="stylesheet" href="estilos/style.css">
-            <link rel="stylesheet" href="estilos/media.css" media="(orientation: portrait)">
+          <link rel="stylesheet" href="estilos/style.css" media="All">
+            <link rel="stylesheet" href="estilos/media.css" media="screen and (orientation: portrait)">
+            <link rel="stylesheet" href="estilos/media-landscape.css" media="screen and (orientation:landscape)">
               <title>RDK Molas</title>
                 <link rel="shortcut icon" href="favicon-ico/favicon.png" type="image/x-icon">
                   <script src="javascript/java-menu.js"></script>
@@ -21,7 +22,10 @@
     </nav>
 
     
-      <i id="icone" class="material-icons" onclick="clicou()"><img src="favicon-ico/menu.png" alt=""></i>
+      <div class="icon">
+        <i id="icone" class="material-icons" onclick="clicou()"><img src="favicon-ico/menu.png" alt=""></i>
+      </div>
+
       <menu id="item">
         <ul>
           <li>
