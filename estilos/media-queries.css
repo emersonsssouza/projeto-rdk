@@ -697,5 +697,237 @@
                                                             }
                                     
                                                             }
+
+
+                                                            @media screen  and (orientation:landscape) and (min-width: 412px) and (max-width: 915px ) {
+                                                                body {
+                                                                width: 100vw;
+                                                                overflow-x: hidden;
+                                                                }
+                                                                
+                                                                header {
+                                                                    background-color: black;
+                                                                    display: block;
+                                                                    align-items: center;
+                                                                    justify-content: space-around;
+                                                                    flex-direction: row;
+                                                                    flex-wrap: nowrap;
+                                                                    margin-top: -10px;
+                                                                }
+                                                                
+                                                                header > nav {
+                                                                    display: block;
+                                                                    flex-direction: row;
+                                                                    align-items: center;
+                                                                    justify-content: space-around;
+                                                                    flex-wrap: nowrap;
+                                                                }
+                                                                
+                                                                header > nav > a > img {
+                                                                    width: 30px;
+                                                                    padding: 1px 1px;
+                                                                    margin: 1px 4px;
+                                                                }
+                                                                
+                                                                menu {
+                                                                    display: flex;
+                                                                    padding: 2px 2px;
+                                                                }
+                                                                
+                                                                menu > ul {
+                                                                    display: flex;
+                                                                    padding: auto;
+                                                                    
+                                                                }
+                                                                
+                                                                menu > ul > li {
+                                                                    display: flex;
+                                                                    padding: 0px 1px;
+                                                                    margin: 0px 5px;
+                                                                    
+                                                                }
+                                                                
+                                                                menu > ul > li > a {
+                                                                    text-decoration: none;
+                                                                    padding: 5px;
+                                                                    font-weight: normal;
+                                                                    color: white;
+                                                                    width: auto;
+                                                                    font-size: 10px;
+                                                                    margin: 0px 2px;
+                                                                }
+                                                                
+                                                                menu > ul > li > a:hover {
+                                                                    color: blue;
+                                                                }
+                                                                
+                                                                i#icone {
+                                                                    display: none;
+                                                                }
+                                                                
+                                                                article {
+                                                                    display: block;
+                                                                    background-color: white;
+                                                                    margin: auto;
+                                                                }
+                                                                
+                                                                div.conteudo-itens {
+                                                                    display: flex;
+                                                                    margin: auto;
+                                                                    padding: 10px;
+                                                                    }
+                                                                
+                                                                    div.conteudo-itens > img.conteudo-itens-rdk {
+                                                                    display: flex;
+                                                                    margin: auto;
+                                                                    margin-top: 20px;
+                                                                    width: 100px;
+                                                                    height: 100px;
+                                                                    }
+                                                                        
+                                                                    div.conteudo-itens > img.conteudo-itens-redondo {
+                                                                    display: flex;
+                                                                    margin: auto;
+                                                                    margin-top: 20px;
+                                                                    width: 90px;
+                                                                    height: 90px;
+                                                                    border: 2px solid black;
+                                                                    border-radius: 50%;
+                                                                    }
+                                                                
+                                                                    div#conteudo-itens-texto {
+                                                                        text-align: center;
+                                                                        width: 100%;
+                                                                        padding: 10px;
+                                                                        margin-top: 10px;
+                                                                        font-family: Arial, Helvetica, sans-serif;
+                                                                        font-size: 16px;
+                                                                        color: #2478B8;
+                                                                        }
+                                                                    
+                                                                        div.conteudo-itens-titulo {
+                                                                        text-align: center;
+                                                                        color: #2478B8;
+                                                                        font-family: Arial, Helvetica, sans-serif;
+                                                                        font-size: 15px;
+                                                                        margin-top: 20px;
+                                                                        margin-bottom: 15px;
+                                                                        }
+                                                                
+                                                                        aside {
+                                                                            width: 100%;
+                                                                            display: flex;
+                                                                            padding: 0px 5px;
+                                                                            align-items: center;
+                                                                            justify-content: space-around;
+                                                                            background-color: #036CAD;
+                                                                            margin-bottom: 0px;                       
+                                                                            }
+                                                                                    
+                                                                            div.conteudo-itens-historia > p {
+                                                                            font-family: Arial, Helvetica, sans-serif;
+                                                                            font-size: 14px;
+                                                                            padding: 10px;
+                                                                            text-align: left;
+                                                                            color: white;
+                                                                            font-weight: 100;
+                                                                            }
+                                                                                    
+                                                                            div.conteudo-itens-vanzolini > img {
+                                                                                width: 190px;
+                                                                                height: 90px;
+                                                                            display: block;
+                                                                            margin: 0 auto;
+                                                                            }
+                                                                
+                                                                            main {
+                                                                                background-color: white;
+                                                                                padding: 10px;
+                                                                                }
+                                                                                                
+                                                                                section {
+                                                                                background-color: white;
+                                                                                padding: 5px 10px;
+                                                                                color: #E9B644;
+                                                                                text-align: left;
+                                                                                font-size: 17px;
+                                                                                }
+                                                                
+                                                                        
+                                                                                main > div.conteudo-maquinas, main > div.conteudo-maquinas-2 {
+                                                                                    display: flex;
+                                                                                    flex-direction: row;
+                                                                                    margin: auto; 
+                                                                                    align-items: center;  
+                                                                                    }
+                                                                                                    
+                                                                                    main > div.imagem-maquinas {
+                                                                                    display: block;         
+                                                                                    margin: auto;
+                                                                                    width: none;
+                                                                                    }
+                                                                                
+                                                                                    img.imagem-maquinas-img {
+                                                                                    margin: auto;
+                                                                                    width: none;
+                                                                                    display: block;
+                                                                                    width: 90px;
+                                                                                    }
+                                                                                                    
+                                                                                    p.texto {
+                                                                                    padding: 20px 0px;
+                                                                                    font-size: 15px;
+                                                                                    text-align: center;
+                                                                                    }
+                                                                
+                                                                                    footer {
+                                                                                        background-color: #212020 ;
+                                                                                        color: white;
+                                                                                        margin: auto;
+                                                                                        margin-top: -10px;
+                                                                                        padding: 20px;
+                                                                                        }
+                                                                                                            
+                                                                                        footer h1 {
+                                                                                        border-bottom: 2px double white;
+                                                                                        font-family: Arial, Helvetica, sans-serif;
+                                                                                        font-size: 14px;
+                                                                                        font-weight: lighter;
+                                                                                        line-height: 16px;
+                                                                                        margin-bottom: 16px;
+                                                                                        margin-top: 10px;
+                                                                                        }
+                                                                                                            
+                                                                                        footer p {
+                                                                                        font-family: Arial, Helvetica, sans-serif;
+                                                                                        font-size: 12px;
+                                                                                        font-weight: lighter;
+                                                                                        line-height: 20px;
+                                                                                        }
+                                                                                                            
+                                                                                        footer a {
+                                                                                        color: white;
+                                                                                        text-decoration: none;
+                                                                                        }
+                                                                                                            
+                                                                                        footer > div.lista {
+                                                                                        display: block;
+                                                                                        justify-content: space-evenly;
+                                                                                        justify-items: center;
+                                                                                        }
+                                                                
+                                                                                        div.img-footer > a > img {
+                                                                                            width: 30px;
+                                                                                        }
+                                                                
+                                                                                        div.img-footer > a > img:hover {
+                                                                                            background-color: white;
+                                                                                            border: 2px solid white;
+                                                                                            border-radius: 50%;
+                                                                                        }
+                                                                
+                                                                                        }
+                                                        
+                                                                                       
                             
                                                                                           
