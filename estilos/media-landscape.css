@@ -228,7 +228,7 @@ div.conteudo-itens {
                         }
                         }
 
-@media screen and (min-width: 500px) and (max-width: 240px ) {
+@media screen and (min-width: 500px) and (max-width: 499px ) {
                             body {
                                 width: 100vw;
                                 overflow-x: hidden;
