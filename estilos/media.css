@@ -240,10 +240,10 @@
     }
 
 
-    @media screen and (min-width: 500px) and (max-width: 499px ) {
+    @media screen and (orientation: landscape) and (min-width: 500px) and (max-width: 499px ) {
         body {
-            width: 100vw;
-            overflow-x: hidden;
+        width: 100vw;
+        overflow-x: hidden;
         }
         
         header {
