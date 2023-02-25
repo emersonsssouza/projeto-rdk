@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media screen and (min-width: 320px) and (max-width: 550px ) {
+@media screen and (min-width: 320px) and (max-width: 480px ) {
 
     * { 
     margin: 0;
@@ -240,7 +240,7 @@
     }
 
 
-    @media screen and (orientation: landscape) and (min-width: 500px) and (max-width: 499px ) {
+    @media screen and (min-width: 481px) and (max-width: 768px ) {
         body {
         width: 100vw;
         overflow-x: hidden;
@@ -467,9 +467,6 @@
                                     border-radius: 50%;
                                 }
         
-        
-        
-        
                                 }
                 
         
@@ -477,23 +474,3 @@
         
         
         
-        
-        
-        
-        
-        
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
-    
