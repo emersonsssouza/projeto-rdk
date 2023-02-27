@@ -1,0 +1,58 @@
+@media screen and (min-width: 1025px) {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    header {
+      width: 100vw;
+      background-color: rgb(6, 6, 48);
+    }
+
+    nav {
+        display: none;
+    }
+
+    i {
+        display: none;
+    }
+
+    menu {
+        display: flex;
+        background-color: rgb(6, 6, 48);
+    }
+
+    menu > ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    menu > ul > li {
+        display: flex;
+        padding: 10px;
+    }
+
+    menu > ul > li > a {
+        text-decoration: none;
+        color: white;
+    }
+
+    article, aside, main, section {
+        background-color: rgb(6, 6, 48);
+    }
+
+    article > div#conteudo-itens-texto > p {
+        padding: 0px 110px;
+    }
+
+    aside > div.conteudo-itens-historia > p {
+        color: #4C6EB0;
+        line-height: 37px;
+    }
+
+    aside > div.conteudo-itens-vanzolini > img {
+        height: 180px;
+    }
+  }
