@@ -1,8 +1,13 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
-
-  header {
+  header{
     width: 100vw;
-    background-image: linear-gradient(50deg, blue,rgba(255, 255, 255, 0.144), rgb(4, 4, 53), blue);
+    background-image: linear-gradient(
+      50deg,
+      blue,
+      rgba(255, 255, 255, 0.144),
+      rgb(4, 4, 53),
+      blue
+    );
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -30,10 +35,10 @@
   }
 
   i#icone {
-   margin: auto;
-   padding: 5px;
-   border: 3px solid white;
-   border-radius: 50%;
+    margin: auto;
+    padding: 5px;
+    border: 3px solid white;
+    border-radius: 50%;
   }
 
   menu {
@@ -61,12 +66,7 @@
     background-color: none;
   }
 
-  
-
-  /*Fim da parte superior, o header */
-  /*Inicio da parte das imagens com borda redonda e um texto secundario*/
-
-  article {
+  article{
     display: block;
     background-color: white;
     margin: auto;
