@@ -1,68 +1,56 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    header{
-        width: 100%;
-        display: flex;
-        background-image: linear-gradient(90deg, rgb(6, 6, 48), rgb(8, 8, 56), rgb(66, 66, 7));
-    }
+  header {
+    width: 100%;
+    display: flex;
+  }
 
-    nav {
-        display: none;
-    }
+  nav {
+    display: none;
+  }
 
-    i {
-        display: none;
-    }
+  i {
+    display: none;
+  }
 
-    menu {
-        display: flex;
-        padding: 10px;
-    }
+  menu {
+    display: flex;
+    padding: 10px;
+  }
 
-    menu > ul {
-        display: flex;
-        list-style-type: none;
-    }
+  menu > ul {
+    display: flex;
+    list-style-type: none;
+  }
 
-    menu > ul > li > a {
-        display: flex;
-        padding: 10px;
-        text-decoration: none;
-        color: white;
-    }
+  menu > ul > li > a {
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+  }
 
-    article {
-        background-color: rgb(6, 6, 47);
-    }
+  article > div.conteudo-itens {
+    display: flex;
+  }
 
-    article > div.conteudo-itens {
-        display: flex;
-    }
+  article > div.conteudo-itens > img.conteudo-itens-rdk,
+  article > div.conteudo-itens > img.conteudo-itens-redondo {
+    padding: 0px 5px;
+    padding: 0px 5px;
+  }
 
-    article > div.conteudo-itens > img.conteudo-itens-rdk,  article > div.conteudo-itens > img.conteudo-itens-redondo {
-        padding: 0px 5px;
-        padding: 0px 5px;
-    }
+  article > div#conteudo-itens-texto > p {
+    padding: 10px;
+  }
 
-    article > div#conteudo-itens-texto > p {
-        padding: 10px;
-    }
+  aside > div.conteudo-itens-historia > p {
+    padding: 10px;
+    color: white;
+    line-height: 29px;
+  }
 
-    aside {
-        background-color: rgb(6, 6, 47);
-    }
-
-    aside > div.conteudo-itens-historia > p {
-        padding: 10px;
-        color: #0383CA;
-        line-height: 29px;
-    }
-
-    aside > div.conteudo-itens-vanzolini > img {
-        padding: 10px;
-        height: 180px;
-    }
-
-    main, section {
-        background-color: rgb(6, 6, 47);
-    }
+  aside > div.conteudo-itens-vanzolini > img {
+    padding: 10px;
+    height: 180px;
+  }
 }
