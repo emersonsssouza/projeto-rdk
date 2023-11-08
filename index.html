@@ -5,188 +5,144 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="shortcut icon" href="favicon-ico/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="estilos/style.css" media="All">
-  <link rel="stylesheet" href="estilos/media-smartphone.css" media="screen">
-  <link rel="stylesheet" href="estilos/media-smartphone-modernos.css" media="screen">
-  <link rel="stylesheet" href="estilos/media-tablet.css" media="screen">
-  <link rel="stylesheet" href="estilos/media-notebook.css" media="screen">
-  <script src="javascript/java-menu.js"></script>
+  <link rel="stylesheet" href="estilos/style.css">
+  <script src="JavaScript/App.js"></script>
   <title>RDK Molas</title>
 </head>
 
 <body onresize="mudouTamanho()">
   <header>
-    <nav>
-      <a href="https://www.instagram.com/rdkmolas/"><img src="favicon-ico/instagram.png" /></a>
+    <div class="icon-social">
+      <a href="https://www.instagram.com/rdkmolas/"><img src="icones/instagram.png" /></a>
       <a href="https://www.facebook.com/pages/RDK-Industria-e-Comercio-de-Molas/157384121313846"><img
-          src="favicon-ico/facebook.png" /></a>
-      <a href="https://www.youtube.com/user/kneipp68"><img src="favicon-ico/youtube.png" /></a>
-      <a href="https://rdkmolas.com.br/sac/"><img src="favicon-ico/email.png" /></a>
-    </nav>
+      src="icones/facebook.png" /></a>
+      <a href="https://www.youtube.com/user/kneipp68"><img src="icones/youtube.png" /></a>
+      <a href="https://rdkmolas.com.br/sac/"><img src="icones/email.png" /></a>
+    </div>
 
     <i id="icone" class="material-icons" onclick="clicou()"><img src="favicon-ico/menu.png" alt="" width="35px"></i>
 
-    <menu id="item">
-      <ul>
-        <li>
-          <a href="https://rdkmolas.com.br/">Home</a>
-        </li>
-
-        <li>
-          <a href="https://rdkmolas.com.br/sobre-a-empresa/">Empresa </a>
-        </li>
-
-        <li>
-          <a href="https://rdkmolas.com.br/maquinas/"> Processos </a>
-        </li>
-
-        <li>
-          <a href="https://rdkmolas.com.br/artefatos-em-arame-2/"> Produtos</a>
-        </li>
-
-        <li>
-          <a href="https://rdkmolas.com.br/projetos-e-ferramentaria/">Ferramentaria</a>
-        </li>
-
-        <li>
-          <a href="https://rdkmolas.com.br/cotacao/">Cotação</a>
-        </li>
-
-        <li>
-          <a href="https://rdkmolas.com.br/cotacao/">SAC</a>
-        </li>
-
-        <li>
-          <a class="https://rdkmolas.com.br/wp-content/uploads/2022/03/CERTIFICADO-RDK-ISO-9001-Val.-2024-COMPLETO.pdf"
-            href="#">Certificação</a>
-        </li>
-      </ul>
-    </menu>
+    <div class="menu-social">
+      <a href="">HOME</a>
+      <a href="">SOBRE A EMPRESA </a>
+      <a href="">PROCESSO</a>
+      <a href="">PRODUTOS</a>
+      <a href="">FERRAMENTARIA</a>
+      <a href="">COTAÇÃO</a>
+      <a href="">SAC</a>
+      <a href="">CERTIFICAÇÃO</a>
+    </div>
   </header>
 
-  <article>
-    <div class="conteudo-itens">
+  <section class="conteudo-primario">
 
-      <img class="conteudo-itens-rdk" src="imagens mola/logo.png" width="" alt=" RDK Molas">
-      <img class="conteudo-itens-redondo" src="imagens mola/mola7.jpg" alt="mola">
-      <img class="conteudo-itens-redondo" src="imagens mola/mola6.jpg" alt="mola">
-      <img class="conteudo-itens-redondo" src="imagens mola/mola5.jpg" alt="mola">
-    </div>
-
-    <div id="conteudo-itens-texto">
-      <p>Nosso foco é priorizar as <br> exigencias do mercado <br> investindo na melhoria de <br> <strong>processo
-          contínua</strong>, visando <br> reduzir os custos de fabricação, <br> otimizar os prazos de entrega.</p>
-    </div>
-
-    <div class="conteudo-itens-titulo">
-      <h1>Tecnologia em conformação de Metais</h1>
-    </div>
-
-    <aside>
-      <div class="conteudo-itens-historia">
-        <p>A RDK IND. E COM. DE MOLAS LTDA., é uma empresa<br> certificada ISO 9001:2015, fundada em 07 de dezembro <br>
-          de 1996 e especializada na fabricação de molas de <br> compressão, tração, torção, artefatos de arame, <br>
-          estamparia e montagens de subconjunto</p>
+    <div class="conteudo-primario-itens">
+      <div class="logo-rdk">
+        <img src="imagens/logo.png" alt="logotipo rdk">
       </div>
 
-      <div class="conteudo-itens-vanzolini">
-        <img src="vanzolini/vanzolini.png" alt="">
+      <div class="container-slide">
+        <div class="action-button" id="previous">&laquo;</div>
+        <div class="container-items" id="container-items"></div>
+        <div class="action-button" id="next">&raquo;</div>
+    </div>
+      
+      
+
+      <div class="texto">
+        <p>Nosso foco é priorizar as exigências do mercado investindo na melhoria de processo contínua, visando reduzir
+          os custos de fabricação, otimizar os prazos de entrega.</p>
       </div>
-    </aside>
-  </article>
+    </div>
 
-  <div class="foto">
+    <div class="conteudo-secundario-itens">
+      <h2>Tecnologia em conformação de Metais</h2>
+    </div>
 
-  </div>
+  </section>
+
+  <section class="historia-rdk">
+    <div class="conteudo-itens-historia">
+      <p>A RDK IND. E COM. DE MOLAS LTDA., é uma empresa<br> certificada ISO 9001:2015, fundada em 07 de dezembro <br>
+        de 1996 e especializada na fabricação de molas de <br> compressão, tração, torção, artefatos de arame, <br>
+        estamparia e montagens de subconjunto</p>
+    </div>
+
+    <img src="" alt="">
+
+  </section>
+
+  <section class="img-parallax">
+    <!--Aqui sera colocado o fundo parralax-->
+  </section>
 
   <main>
-    <section>
+    <div class="conteudo-apresentação">
       <p>
         A <strong>RDK Molas</strong> está presente em todo mercado brasileiro atendendo em diversos <br> segmentos:
         Automotivo, Ferroviário, Linha Branca, Moveleiro, Eletroeletronico, <br> Bélico, Máquinas e Equipamentos e
         Diversas Aplicações.
       </p>
-    </section>
+    </div>
 
-    <div class="conteudo-maquinas">
-      <div class="imagem-maquinas">
-        <img class="imagem-maquinas-img" src="maquinas/maq-01.jpg" alt="Nossos Produtos"></img>
-        <p class="texto">DK-50</p>
+    <div class="conteudo-produtos">
+      <div class="img-maquina">
+        <img src="maquinas/maq-01.jpg" alt="Nossos Produtos"></img>
+        <p class="texto">NOSSOS PRODUTOS</p>
       </div>
 
-      <div class="imagem-maquinas">
-        <img class="imagem-maquinas-img" src="maquinas/maq-02.jpg" alt="Nossas Maquinas"></img>
-        <p class="texto">RD-18</p>
+      <div class="img-maquina">
+        <img src="maquinas/maq-02.jpg" alt="Nossas Maquinas"></img>
+        <p class="texto">NOSSAS MÁQUINAS</p>
       </div>
 
-      <div class="imagem-maquinas">
-        <img class="imagem-maquinas-img" src="maquinas/maq-03.jpg" alt="Nossas Ferramentas"></img>
-        <p class="texto">DK-80</p>
+      <div class="img-maquina">
+        <img src="maquinas/maq-03.jpg" alt="Nossas Ferramentas"></img>
+        <p class="texto">NOSSOS PROJETOS E <br> FERRAMENTARIA</p>
       </div>
     </div>
 
-    <div class="conteudo-maquinas-2">
 
-      <div class="imagem-maquinas">
-        <img class="imagem-maquinas-img" src="maquinas/maq-04.jpg" alt="Nossos Produtos"></img>
-        <p class="texto">RD-18</p>
-      </div>
+    <footer>
+      <div class="lista">
+        <div>
+          <h1>Páginas</h1>
+          <a href="">
+            <p>Home</p>
+          </a>
+          <a href="">
+            <p>Máquinas</p>
+          </a>
+          <a href="https://rdkmolas.com.br/fabricacao-de-molas/">
+            <p>Nossos Produtos</p>
+          </a>
+          <a href="https://rdkmolas.com.br/projetos-e-ferramentaria/">
+            <p>Projetos e Ferramentaria</p>
+          </a>
+          <a href="https://rdkmolas.com.br/certificado/">
+            <p>Certificação</p>
+          </a>
+          <a href="https://rdkmolas.com.br/sac/">
+            <p>SAC</p>
+          </a>
+        </div>
 
-      <div class="imagem-maquinas">
-        <img class="imagem-maquinas-img" src="maquinas/maq-05.jpg" alt="Nossas Maquinas"></img>
-        <p class="texto">DBD-30</p>
-      </div>
+        <div>
+          <h1>RDK Molas</h1>
+          <p><a href="mailto:vendas@rdkmolas.com.br">vendas@rdkmolas.com.br</a></p>
+          <p><a href="">(11) 4658-1700</a></p>
+          <p><a
+              href="https://www.google.com/maps/place/R.+Avelino+Faria+Neto,+750,+Igarat%C3%A1+-+SP,+12350-000/@-23.2042866,-46.147232,17z/data=!3m1!4b1!4m5!3m4!1s0x94cc28beb40d92a3:0xfa51d73f1188a292!8m2!3d-23.2040688!4d-46.1476101">R.Avelino
+              Faria Neto, 750 - Igaratá - SP, 12350-000</a></p>
+        </div>
 
-      <div class="imagem-maquinas">
-        <img class="imagem-maquinas-img" src="maquinas/maq-06.jpg" alt="Nossas Ferramentas"></img>
-        <p class="texto">DBT</p>
-      </div>
-    </div>
-    </article>
-  </main>
-
-  <footer>
-    <div class="lista">
-      <div>
-        <h1>Páginas</h1>
-        <a href="">
-          <p>Home</p>
-        </a>
-        <a href="">
-          <p>Máquinas</p>
-        </a>
-        <a href="https://rdkmolas.com.br/fabricacao-de-molas/">
-          <p>Nossos Produtos</p>
-        </a>
-        <a href="https://rdkmolas.com.br/projetos-e-ferramentaria/">
-          <p>Projetos e Ferramentaria</p>
-        </a>
-        <a href="https://rdkmolas.com.br/certificado/">
-          <p>Certificação</p>
-        </a>
-        <a href="https://rdkmolas.com.br/sac/">
-          <p>SAC</p>
-        </a>
-      </div>
-
-      <div>
-        <h1>RDK Molas</h1>
-        <p><a href="mailto:vendas@rdkmolas.com.br">vendas@rdkmolas.com.br</a></p>
-        <p><a href="">(11) 4658-1700</a></p>
-        <p><a
-            href="https://www.google.com/maps/place/R.+Avelino+Faria+Neto,+750,+Igarat%C3%A1+-+SP,+12350-000/@-23.2042866,-46.147232,17z/data=!3m1!4b1!4m5!3m4!1s0x94cc28beb40d92a3:0xfa51d73f1188a292!8m2!3d-23.2040688!4d-46.1476101">R.Avelino
-            Faria Neto, 750 - Igaratá - SP, 12350-000</a></p>
-      </div>
-
-      <div class="img-footer">
-        <h1>Contato e Redes Sociais</h1>
-        <a href="https://www.instagram.com/rdkmolas/"><img src="favicon-ico/instagram.png" /></a>
-        <a href="https://www.facebook.com/pages/RDK-Industria-e-Comercio-de-Molas/157384121313846"><img
-            src="favicon-ico/facebook.png" /></a>
-        <a href="https://www.youtube.com/user/kneipp68"><img src="favicon-ico/youtube.png" /></a>
-        <a href="https://rdkmolas.com.br/sac/"><img src="favicon-ico/email.png" /></a>
-      </div>
-  </footer>
+        <div class="img-footer">
+          <h1>Contato e Redes Sociais</h1>
+          <a href="https://www.instagram.com/rdkmolas/"><img src="favicon-ico/instagram.png" /></a>
+          <a href="https://www.facebook.com/pages/RDK-Industria-e-Comercio-de-Molas/157384121313846"><img
+              src="favicon-ico/facebook.png" /></a>
+          <a href="https://www.youtube.com/user/kneipp68"><img src="favicon-ico/youtube.png" /></a>
+          <a href="https://rdkmolas.com.br/sac/"><img src="favicon-ico/email.png" /></a>
+        </div>
+    </footer>
 </body>
