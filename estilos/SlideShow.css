@@ -1,0 +1,897 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #f2d786;
+}
+/*Estilização do menu*/
+#button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#menu-mobile {
+  display: none;
+  background-color: black;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.itens-mobile ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.itens-mobile ul li {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.itens-mobile ul li:hover {
+  background-color: #333;
+}
+/*Fim do menu*/
+
+.header {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: auto;
+}
+
+main {
+  width: 100vw;
+  height: auto;
+}
+
+.icon-social {
+  width: auto;
+  height: 40px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-right: 50px;
+}
+
+.icon-social > a > img {
+  width: 40px;
+}
+
+.menu-social {
+  width: auto;
+  height: 40px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: black;
+  border-radius: 8px;
+}
+
+.menu-social > a {
+  text-decoration: none;
+  color: #fff;
+  padding: 20px 10px;
+  font-size: 12px;
+}
+
+.container-apresentacao {
+  width: 90vw;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  background-color: transparent;
+}
+
+.container-slide {
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  background-color: transparent;
+  margin: 0px auto;
+}
+
+.logo-img img {
+  margin: auto;
+  width: 100%;
+  height: 200px;
+}
+
+.container-items {
+  position: relative;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 500px;
+  height: 200px;
+  border-radius: 5px;
+  transition: all 1s;
+  overflow: hidden;
+  border: none;
+}
+
+.item {
+  width: auto;
+  height: 200px;
+  transition: all 1s;
+}
+
+.item:first-child {
+  margin-left: -100%;
+}
+
+.item:nth-child(2) {
+  margin-left: 0;
+}
+
+.item img {
+  width: 230px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  height: 190px;
+}
+
+.container-texto {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+.container-texto > p {
+  font-size: 21px;
+  text-align: justify;
+  line-height: normal;
+  color: #036cad;
+}
+
+.action-button {
+  font-size: 70px;
+  display: flex;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: #036cad;
+  user-select: none;
+  z-index: 0;
+}
+
+.action-button:hover {
+  color: #036cad;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+section.container-apresentacao-titulo {
+  width: 80vw;
+  margin: auto;
+}
+
+.container-apresentacao-titulo > h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #036cad;
+  padding: 5px;
+  margin: 10px auto 10px auto;
+}
+
+main.container-premiacao {
+  width: 100vw;
+  height: 300px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #036cad;
+}
+
+.container-premiacao-texto {
+  display: flex;
+  align-items: center;
+  padding: 8% 8%;
+  text-align: left;
+  line-height: 1.7em;
+}
+
+.container-premiacao-texto p {
+  color: white;
+  font-size: 18px;
+}
+
+.container-premiacao-texto strong {
+  font-style: italic;
+}
+
+.container-premiacao-img {
+  padding: auto;
+  margin: auto;
+}
+
+section.background {
+  background-image: url(/imagens/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 400px;
+}
+
+main.apresentacao-produtos {
+  width: 80vw;
+  margin: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.apresentacao-produtos-texto {
+  margin: 10px auto;
+  margin-bottom: 50px;
+}
+
+.apresentacao-produtos-texto p {
+  text-align: center;
+  font-size: 26px;
+  color: #e8b43e;
+}
+
+div.apresentacao-produtos-ferramentas {
+  width: 80vw;
+  height: auto;
+}
+
+div.container-maquinas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+div.item-maquina {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-maquina img {
+  height: 300px;
+  margin: auto 30px;
+}
+
+.item-maquina p {
+  font-size: 17px;
+  font-weight: 550;
+  margin: 50px auto;
+  text-align: center;
+}
+
+img#whatssap {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  width: auto;
+  height: auto;
+  background-color: #56ee6b;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: black;
+  width: 100vw;
+  display: flex;
+}
+
+section.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 80vw;
+  margin: auto;
+}
+
+div.item-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-footer h1 {
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+  border-bottom: 2px solid white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.item-footer a {
+  color: white;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+.item-footer a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.item-footer p {
+  color: white;
+  line-height: 30px;
+}
+
+.item-footer img {
+  width: 40px;
+}
+
+.content-icon {
+  display: flex;
+}
+
+.item-footer > a.icon {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-mobile,
+#texto-mobile,
+button {
+  display: none;
+}
+
+/*Media para smartphones em pe portrait finalizado* -- refazendo*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .menu-social,
+  h2#texto-pc {
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
+    height: 120px;
+  }
+
+  button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1px;
+    margin: auto 10px;
+    margin-bottom: 10px;
+    background-color: black;
+    border-radius: 5px;
+  }
+
+  .header {
+    margin: auto;
+  }
+
+  .icon-social {
+    margin: auto;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  .container-apresentacao {
+    flex-direction: column;
+    margin: auto;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    background-color: transparent;
+  }
+
+  .container-slide {
+    width: 300px;
+    margin: 10px auto;
+    border-radius: 5px;
+    display: flex;
+    height: auto;
+    background-color: transparent;
+    margin: 0px auto;
+  }
+
+  .container-items {
+    width: auto;
+    height: 130px;
+    border-radius: 3px;
+    margin: 20px auto;
+  }
+
+  .logo-img img {
+    margin: auto;
+    width: 100%;
+    height: 100px;
+  }
+
+  .item {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin: 5px;
+  }
+
+  .item img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .action-button {
+    font-size: 50px;
+  }
+
+  .container-texto {
+    width: 80vw;
+  }
+
+  .container-texto br {
+    display: none;
+  }
+
+  .container-texto p {
+    justify-content: center;
+    line-height: normal;
+    font-size: 24px;
+    text-align: justify;
+  }
+
+  .container-apresentacao-titulo {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-apresentacao-titulo h2#texto-mobile {
+    display: flex;
+    font-size: 23px;
+    font-weight: bold;
+  }
+
+  main.container-premiacao {
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+  }
+
+  .container-premiacao-texto {
+    width: 100vw;
+  }
+
+  .container-premiacao-texto br {
+    display: none;
+  }
+
+  .container-premiacao-texto p {
+    text-align: justify;
+  }
+
+  section.background {
+    background-image: url(/imagens/galpao-background.png);
+  }
+
+  main.apresentacao-produtos {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+  }
+
+  .apresentacao-produtos-texto br {
+    display: none;
+  }
+
+  .apresentacao-produtos-texto p {
+    text-align: center;
+    margin: auto 20px;
+    font-size: 25px;
+  }
+
+  .apresentacao-produtos-ferramentas {
+    width: 100vw;
+    margin: -10px auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.container-maquinas {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .item-maquina {
+    margin: 0px;
+  }
+
+  .item-maquina p {
+    margin: 0px;
+  }
+
+  footer,
+  section.footer {
+    flex-direction: column;
+  }
+
+  .item-footer {
+    width: 80vw;
+  }
+
+  .item-footer > h1 {
+    width: 100%;
+  }
+}
+
+/*Finalizada a midia para tablet*/
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    flex-direction: row;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-mobile {
+    display: none;
+    background-color: black;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .icon-social {
+    width: 200px;
+  }
+
+  .header {
+    width: auto;
+  }
+
+  .header a {
+    margin: auto 9px;
+  }
+
+  button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 60px;
+    margin: auto 5px;
+    background-color: black;
+    border-radius: 10px;
+  }
+
+  .menu-social {
+    display: none;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  .container-apresentacao {
+    flex-direction: row;
+    margin: auto;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    background-color: transparent;
+  }
+
+  .container-slide {
+    width: 300px;
+    margin: 10px auto;
+    border-radius: 5px;
+    display: flex;
+    height: auto;
+    background-color: transparent;
+    margin: 0px auto;
+  }
+
+  .container-items {
+    width: auto;
+    height: 300px;
+    border-radius: 3px;
+    margin: auto;
+  }
+
+  .logo-img img {
+    margin: auto;
+    width: 100%;
+    height: 200px;
+  }
+
+  .item {
+    width: 200px;
+    margin: auto;
+    margin: 10px;
+  }
+
+  .item img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .action-button {
+    font-size: 70px;
+  }
+  .container-texto {
+    width: auto;
+  }
+
+  .container-texto br {
+    display: none;
+  }
+
+  .container-texto p {
+    width: 200px;
+    text-align: justify;
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  section.footer {
+    width: auto;
+  }
+
+  .item-footer {
+    width: 250px;
+  }
+
+  .container-premiacao-texto {
+    width: 60%;
+  }
+
+  .container-premiacao-texto p {
+    text-align: left;
+  }
+
+  .container-premiacao-texto br {
+    display: none;
+  }
+
+  main.apresentacao-produtos {
+    width: 100vw;
+  }
+
+  div.apresentacao-produtos-texto {
+    width: 100vw;
+  }
+
+  .apresentacao-produtos-texto p {
+    font-size: 30px;
+  }
+
+  .apresentacao-produtos-texto br {
+    display: none;
+  }
+
+  div.container-maquinas {
+    width: 100vw;
+  }
+
+  .item-maquina {
+    width: 200px;
+    margin: auto 22px;
+  }
+
+  div.apresentacao-produtos-ferramentas {
+    width: 100vw;
+  }
+}
+
+/*
+Projeto Finalizado media para smartphones deitado e tablet*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  button#button {
+    display: none;
+  }
+
+  header {
+    width: 100vw;
+    height: 110px;
+  }
+
+  div.header {
+    flex-wrap: nowrap;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100px;
+  }
+
+  .menu-social {
+    border-radius: none;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 80vw;
+    height: 90px;
+  }
+
+  div.menu-social > a {
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    padding: 10px 5px;
+  }
+
+  .icon-social {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    width: auto;
+    margin: auto;
+    align-content: center;
+  }
+
+  .icon-social > a {
+    margin: auto;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  .container-apresentacao {
+    flex-direction: row;
+    margin: auto;
+    height: auto;
+    margin: auto;
+  }
+
+  .container-slide {
+    width: 400px;
+    margin: 10px auto;
+    border-radius: 5px;
+    display: flex;
+    height: auto;
+    background-color: transparent;
+    margin: 0px auto;
+  }
+
+  .container-items {
+    width: auto;
+    height: 200px;
+    border-radius: 3px;
+    margin: auto;
+  }
+
+  .logo-img img {
+    margin: auto;
+    width: 130px;
+    height: 100px;
+  }
+
+  .item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+
+  .item img {
+    width: 100px;
+    height: 80px;
+  }
+
+  .action-button {
+    font-size: 50px;
+  }
+
+  .container-texto {
+    width: auto;
+  }
+
+  .container-texto br {
+    display: none;
+  }
+
+  .container-texto p {
+    text-align: justify;
+    font-size: 19px;
+    line-height: normal;
+  }
+
+  .container-premiacao-texto {
+    width: 60%;
+  }
+
+  .container-premiacao-texto p {
+    text-align: left;
+  }
+
+  .container-premiacao-texto br {
+    display: none;
+  }
+
+  main.apresentacao-produtos {
+    width: 100vw;
+  }
+
+  div.apresentacao-produtos-texto {
+    width: 100vw;
+  }
+
+  .apresentacao-produtos-texto p {
+    font-size: 30px;
+  }
+
+  .apresentacao-produtos-texto br {
+    display: none;
+  }
+
+  div.container-maquinas {
+    width: 100vw;
+  }
+
+  .item-maquina {
+    width: 200px;
+    margin: auto 22px;
+  }
+
+  div.apresentacao-produtos-ferramentas {
+    width: 100vw;
+  }
+
+  section.footer {
+    width: auto;
+  }
+}

@@ -1,12 +1,12 @@
 'use strict';
 
 const images = [
-    { 'id': '1', 'url' : './imagens-molas/mola-01.jpg' },
-    { 'id': '2', 'url' : './imagens-molas/mola-02.jpg' },
-    { 'id': '3', 'url' : './imagens-molas/mola-03.jpg' },
-    { 'id': '4', 'url' : './imagens-molas/mola-04.jpg' },
-    { 'id': '5', 'url' : './imagens-molas/mola-05.jpg' },
-    { 'id': '6', 'url' : './imagens-molas/mola-06.jpg' },
+    { 'id': '1', 'url' : './imagens/mola-01.jpg' },
+    { 'id': '2', 'url' : './imagens/mola-02.jpg' },
+    { 'id': '3', 'url' : './imagens/mola-03.jpg' },
+    { 'id': '4', 'url' : './imagens/mola-04.jpg' },
+    { 'id': '5', 'url' : './imagens/mola-05.jpg' },
+    { 'id': '6', 'url' : './imagens/mola-06.jpg' },
 ]
 
 const containerItems = document.querySelector('#container-items');
@@ -39,3 +39,11 @@ const next = () => {
 document.querySelector('#previous').addEventListener('click', previous);
 document.querySelector('#next').addEventListener('click', next);
 
+function btnMenu() {
+    var menu = document.getElementById('menu-mobile');
+    if (menu.style.display === 'none' || menu.style.display === '') {
+        menu.style.display = 'block';
+    } else {
+        menu.style.display = 'none';
+    }
+}
